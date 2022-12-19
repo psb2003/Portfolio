@@ -296,3 +296,183 @@ h1 {
         transform: translateY(8rem) scale(0.5);
     }
 }
+@media (max-width: 905px) {
+    .infoContainer {
+        height: 49vh;
+        width: 100vw;
+        margin: 71px auto;
+        display: flex;
+        /* display: block; */
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .devInfo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+    .devPic img {
+        box-shadow: rgb(0 0 0 / 20%) 0px 6px 101px 0px;
+        width: 20vh;
+    }
+
+    .scroll {
+        height: 84px;
+    }
+
+    .navbar .menu-items {
+        height: 100vh;
+        width: 105%;
+        margin-top: 733px;
+    }
+
+    .about {
+
+        font-size: 25px;
+
+    }
+
+    .hello {
+        font-size: 40px;
+
+    }
+
+    .name {
+        font-size: 48px;
+
+    }
+
+    .chevron {
+        position: absolute;
+        width: 3rem;
+        height: 0.4rem;
+        top: -9px;
+    }
+
+    .twitter {
+        right: 33vw;
+    }
+
+    .instagram {
+        right: 22vw;
+    }
+
+    .nav-container .hamburger-lines {
+        right: 7vw;
+    }
+
+    .nav-container .checkbox {
+        right: 7vw;
+    }
+
+    .navbar .menu-items {
+
+        margin-top: 77vh;
+        padding-top: 15vh;
+
+        height: 123vh;
+        width: 103%;
+
+
+
+        height: 115vh;
+        width: 105%;
+    }
+
+    .logo {
+        left: 8vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .scroll {
+        height: 84px;
+    }
+
+    .navbar .nav-container a {
+        font-size: 4.2rem;
+    }
+
+    .navbar .menu-items {
+        margin-top: 65vh;
+        padding-top: 16vh;
+        height: 123vh;
+        width: 109%;
+    }
+
+    .about {
+
+        font-size: 20px;
+
+    }
+
+    .hello {
+        font-size: 22px;
+
+    }
+
+    .name {
+        font-size: 24px;
+
+    }
+
+    .chevron {
+        position: absolute;
+        width: 3rem;
+        height: 0.4rem;
+        top: -9px;
+    }
+
+    .twitter {
+        right: 33vw;
+    }
+
+    .instagram {
+        right: 22vw;
+    }
+
+    .nav-container {
+        height: 85px;
+    }
+
+    .nav-container .hamburger-lines {
+        right: 4vw;
+        height: 27px;
+        width: 37px;
+        top: 37px;
+    }
+
+    .nav-container .checkbox {
+        right: 4vw;
+        height: 27px;
+        width: 37px;
+        top: 37px;
+    }
+    .navbar .menu-items {
+        width: 113%;
+    }
+    
+    .logo {
+        left: 2vh;
+    }
+    
+    h1 {
+        font-size: 26px;
+    
+    }
+    
+    .fa-3x {
+        font-size: 0.3em;
+    }
+    
+    .scroll {
+        display: none;
+    }
+    }
+
+
