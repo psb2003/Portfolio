@@ -34,6 +34,7 @@ body {
     align-items: center;
     height: 116px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 7px 95px 0px;
+    position: sticky;
 }
 
 .navbar .nav-container li {
@@ -191,15 +192,16 @@ h1 {
 .LandingPage {
     font-family: 'Aclonica', sans-serif;
     display: flex;
-    height: 66vh;
+    height: 80vh;
     color: white;
 }
 
 .infoContainer {
-    /* background-color: antiquewhite; */
-    height: 57vh;
+    
+    height: 68vh;
     width: 100vw;
-    margin: 47px auto;
+    margin: 53px auto;
+    margin-top: 19vh;
     display: flex;
     justify-content: space-around;
 }
@@ -235,70 +237,269 @@ h1 {
     justify-content: center;
     /* background-color: aquamarine; */
     z-index: -1;
-    height: 17vh;
+    height: 19vh;
 }
 
-.chevron {
-    position: absolute;
-    width: 3.2rem;
-    height: 0.7rem;
-    opacity: 0;
-    transform: scale(0.3);
-    animation: move-chevron 3s ease-out infinite;
+
+
+.works {
+    padding: 106px 30px;
+    margin-top: 179px;
 }
 
-.chevron:first-child {
-    animation: move-chevron 3s ease-out 1s infinite;
+
+
+.grid-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
+    grid-gap: 7vh 4vw;
+    justify-content: center;
+    align-items: baseline;
+    height: 73vh;
 }
 
-.chevron:nth-child(2) {
-    animation: move-chevron 3s ease-out 2s infinite;
+.grid-row .grid-item span {
+    padding: 12px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: large;
 }
 
-.chevron:before,
-.chevron:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 50%;
-    background: #feffff;
+.grid-row .grid-item h3 {
+    font-size: 20px;
+    margin-bottom: 0;
 }
 
-.chevron:before {
-    left: 0;
-    transform: skewY(30deg);
+.grid-row .grid-item:hover {
+    filter: contrast(0.7);
 }
 
-.chevron:after {
-    right: 0;
-    width: 50%;
-    transform: skewY(-30deg);
+.grid-row .grid-item {
+    transition: filter 0.5s ease;
+    display: flex;
+    cursor: pointer;
+    background-color: #cdcdcd;
+    box-shadow: 1px 2px 12px #3c3c3c;
+    color: #0009fc;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    height: 58vh;
+    border-radius: 28px;
 }
 
-@keyframes move-chevron {
-    25% {
-        opacity: 1;
+.grid-item img {
+    height: 41vh;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+
+}
+
+.infocontainer {
+    height: 64vh;
+    width: 95vw;
+    margin: 53px auto;
+    margin-top: 32vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    color: rgb(218, 218, 218);
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    width: 34vw;
+    align-items: end;
+}
+
+.right-section {
+    width: 46vh;
+}
+
+.right-section img {
+    width: -webkit-fill-available;
+}
+
+.AboutMe {
+    font-size: 83px;
+    padding-bottom: 40px;
+}
+
+.desc {
+    font-size: 36px;
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+
+.pi {
+    font-size: 27px;
+    text-align: justify;
+}
+
+.getintouch {
+    margin-top: 43vh;
+    text-align: center;
+    padding: 82px 18vw;
+    color: #eeeeee;
+}
+
+.heading {
+    font-size: 5em;
+}
+
+.lorem {
+    font-size: 1.4em;
+    margin-top: 19px;
+}
+
+.container2 {
+    width: 80%;
+    margin: auto;
+    max-width: 796px;
+    margin-bottom: 25vh;
+}
+
+
+.inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-row-gap: 39px;
+    grid-column-gap: 43px;
+    height: 23vh;
+}
+
+
+.box {
+    color: #eeeeee;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: rgba(195, 217, 247, 0.2);
+    box-shadow: 1px 2px 3px #3c3c3c;
+    padding: 15px;
+}
+
+.box:hover {
+    box-shadow: 1px 2px 17px #292626;
+    transition-duration: 1s;
+}
+
+.icon {
+    display: block;
+    background-color: #e9eaff;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    padding: 12px;
+    margin: 0 auto 10px auto;
+}
+
+
+.icon i {
+    color: rgb(20, 20, 20);
+    font-size: 2.2rem;
+}
+
+.aboutme{
+    margin-top: 46vh;
+}
+
+.title {
+    font-weight: normal;
+    font-size: 1.7rem;
+    padding-bottom: 0.5vh;
+}
+
+.fa-phone-rotary {
+    color: black;
+}
+
+.min {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+@media (max-width:1206px) and (min-width:791px) {
+    .getintouch {
+        padding: 107px 10vw;
+        margin-top: 440px;
+        
+    }
+    .aboutme{
+        height: 81vh;
+        padding-top: 25vh;
+    }
+    .pi{
+        font-size: 24;
+    }
+    .desc{
+        font-size: 30px;
+    }
+    
+}
+@media (max-width:791px) and (min-width:510px) {
+    .LandingPage {
+        margin-top: 115px;
     }
 
-    33.3% {
-        opacity: 1;
-        transform: translateY(3.8rem);
+    .infocontainer {
+        height: 64vh;
+        width: 100vw;
     }
 
-    66.6% {
-        opacity: 1;
-        transform: translateY(5.2rem);
+    .left-section {
+        width: 82vw;
+        align-items: center;
     }
 
-    100% {
-        opacity: 0;
-        transform: translateY(8rem) scale(0.5);
+    .desc {
+        font-size: 26px;
+    }
+
+    .pi {
+        font-size: 20px;
+    }
+
+    .right-section {
+        display: none;
+    }
+
+   .lorem{
+    font-size: 1.3em;
+   }
+
+   .heading {
+    font-size: 4em;
+}
+    .getintouch{
+        padding: 61px 6vw;
+    }
+    
+.container2{
+    align-items: center;
+    display: grid;
+    justify-items: center;
+    margin-bottom: 69vh;
+}
+    .works {
+        height: 226vh;
+    }
+    .AboutMe{
+        margin-top: 6vh;
+    }
+    .aboutme{
+        margin-top: 130vh;
     }
 }
+
 @media (max-width: 905px) {
+    .LandingPage {
+        margin-top: 115px;
+    }
+
+    
     .infoContainer {
-        height: 49vh;
+        height: 64vh;
         width: 100vw;
         margin: 71px auto;
         display: flex;
@@ -323,6 +524,7 @@ h1 {
 
     .scroll {
         height: 84px;
+
     }
 
     .navbar .menu-items {
@@ -332,27 +534,17 @@ h1 {
     }
 
     .about {
-
         font-size: 25px;
-
     }
 
     .hello {
         font-size: 40px;
-
     }
 
     .name {
         font-size: 48px;
-
     }
 
-    .chevron {
-        position: absolute;
-        width: 3rem;
-        height: 0.4rem;
-        top: -9px;
-    }
 
     .twitter {
         right: 33vw;
@@ -371,24 +563,76 @@ h1 {
     }
 
     .navbar .menu-items {
-
         margin-top: 77vh;
         padding-top: 15vh;
-
         height: 123vh;
         width: 103%;
-
-
-
         height: 115vh;
         width: 105%;
     }
 
     .logo {
-        left: 8vh;
+        left: 4vh;
+        top: 45px;
     }
+
 }
 
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+@media (max-width: 510px){
+    
+    
+    .right-section{
+        display: none;
+    }
+    .container2{
+        width: 52%;
+        margin-bottom: 66vh;
+
+    }
+    .infocontainer{
+        height: 64vh;
+        width: 95vw;
+        margin: 53px auto;
+        margin-top: 32vh;
+    }
+    .left-section{
+        width: 83vw;
+        align-items: center;
+    }
+    .AboutMe{
+    font-size: 48px;
+    }
+    .aboutme{
+        margin-top: 130vh;
+    }
+    .desc{
+        font-size: 24px;
+    }
+    .pi{
+        font-size: 19px;
+    }
+    .getintouch{
+        padding: 71px 5vw;
+        margin-top: 0;
+    }
+    .heading {
+        font-size: 3em;
+    }
+    .lorem{
+        font-size: 1.3em;
+    }
+    .works{
+        margin-top: 111px;
+    }
+    
+}
 @media (max-width: 480px) {
     .scroll {
         height: 84px;
@@ -406,27 +650,17 @@ h1 {
     }
 
     .about {
-
         font-size: 20px;
-
     }
 
     .hello {
         font-size: 22px;
-
     }
 
     .name {
         font-size: 24px;
-
     }
 
-    .chevron {
-        position: absolute;
-        width: 3rem;
-        height: 0.4rem;
-        top: -9px;
-    }
 
     .twitter {
         right: 33vw;
@@ -453,26 +687,28 @@ h1 {
         width: 37px;
         top: 37px;
     }
+
     .navbar .menu-items {
         width: 113%;
     }
-    
+
     .logo {
         left: 2vh;
+        top: 31px;
     }
-    
+
     h1 {
         font-size: 26px;
-    
     }
-    
+
     .fa-3x {
         font-size: 0.3em;
     }
-    
+
     .scroll {
         display: none;
     }
-    }
+}
+
 
 
