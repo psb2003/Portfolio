@@ -8,10 +8,11 @@
     <title>Purva Bhangale</title>
     <script src="https://kit.fontawesome.com/6a8bb2a47d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="purva.js"></script>
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar sticky">
         <div class="container nav-container">
             <div class="logo">
                 <h1>Purva Bhangale</h1>
@@ -27,13 +28,14 @@
                 <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
             </div>
             <div class="twitter">
-                <a href="https://twitter.com" target="_blank"><i class="btn btn-light fa-brands fa-twitter fa-3x"></i></a>
+                <a href="https://twitter.com" target="_blank"><i
+                        class="btn btn-light fa-brands fa-twitter fa-3x"></i></a>
             </div>
-            <div class="menu-items">
-                <li><a href="/LandingPage.html">Home</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Contact</a></li>
+            <div class="menu-items" >
+                <li><a href="/Index.html">Home</a></li>
+                <li><a href="#linkworkpage">Works</a></li>
+                <li><a href="#linkaboutmepage">About Me</a></li>
+                <li><a href="#linkcontactpage">Contact</a></li>
             </div>
         </div>
     </nav>
@@ -50,12 +52,93 @@
         </div>
 
     </div>
-    <div class="scroll">
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-    </div>
+   
+    <section class="works" id="linkworkpage">
+        <div class="container">
+            <div class="grid-row">
+                <div class="grid-item">
+                    <span>
+                        <h3>Login Page</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cum, maiores nostrum quam
+                            nesciunt totam repudiandae expedita.</p>
+                    </span>
+                    <img src="pic1.jpg">
+                </div>
+                <div class="grid-item">
+                    <span>
+                        <h3>Soundwave</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sapiente praesentium soluta
+                            molestias. Maiores, deserunt.</p>
+                    </span>
+                    <img src="pic1.jpg" />
+                </div>
+                <div class="grid-item">
+                    <span>
+                        <h3>Portfolio Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iure sunt molestias veritatis?
+                        </p>
+                    </span> <img src="pic1.jpg" />
+                </div>
 
+            </div>
+        </div>
+        </div>
+        <div class="aboutme">
+            <div class="infocontainer" id="linkaboutmepage">
+                <div class="left-section">
+                    <div class="AboutMe">About Me</div>
+                    <div class="desc">
+                        I build & design stuff.
+                    </div>
+                    <div class="pi">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores quam et iusto praesentium
+                        voluptate facere odio ipsum nam culpa aliquid, esse iure at? Sequi culpa impedit ab laudantium
+                        quidem, architecto, repellat, nobis suscipit totam eaque ipsum deserunt fugit placeat excepturi
+                        nisi tempora velit nam.
+                    </div>
+                </div>
+                <div class="right-section">
+                    <img src="landing-page-girl.png" alt="Image not found.">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="getintouch" id="linkcontactpage">
+        <div class="heading">Get In Touch</div>
+        <div class="lorem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero suscipit hic saepe corporis nostrum
+            nihil accusantium in nemo minima amet! Reiciendis repellat dolores atqu. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quasi numquam consequatur ullam iusto sint amet.
+        </div>
+    </div>
+    <div class="container2">
+        <div class="inner">
+
+            <div class="box">
+                <span class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <h3 class="title">Address</h3>
+                <span class="min">National Institute of Technology, Rourkela</span>
+            </div>
+
+            <div class="box">
+                <span class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                </span>
+                <h3 class="title">Phone</h3>
+                <span class="min">123-456-789</span>
+            </div>
+
+            <div class="box">
+                <span class="icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </span>
+                <h3 class="title">Email</h3>
+                <span class="min">purva@example.com</span>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
